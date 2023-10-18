@@ -11,7 +11,10 @@
     "url": "git+https://github.com/tudinhacoustic/lazada-open-api.git"
   },
   "keywords": [
-    "lazada-open-api"
+    "lazada-open-api",
+    "lazada-open-platform",
+    "lazada-api",
+    "lazada-signature"
   ],
   "author": "Tu Dinh Acoustic",
   "license": "ISC",
