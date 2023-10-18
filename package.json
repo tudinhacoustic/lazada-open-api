@@ -1,0 +1,22 @@
+{
+  "name": "lazada-open-api",
+  "version": "1.0.0",
+  "description": "Generate \"signature\", \"signature by url\" and more for Lazada Open Platform.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/tudinhacoustic/lazada-open-api.git"
+  },
+  "keywords": [
+    "lazada-open-api"
+  ],
+  "author": "Tu Dinh Acoustic",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/tudinhacoustic/lazada-open-api/issues"
+  },
+  "homepage": "https://github.com/tudinhacoustic/lazada-open-api#readme"
+}
