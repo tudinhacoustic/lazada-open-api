@@ -32,6 +32,7 @@ $ npm install lazada-open-api-package
 
   * Generate Signature using Url
   * Generate Signature
+  * Generate Timestamp
 
 [Back](#content)
 
@@ -92,7 +93,7 @@ Response Data
 ```js
 const lazadaOpenApi = require('lazada-open-api-package')
 
-const timestamp = lazadaOpenApi.timestamp(params, path, appSecret);
+const timestamp = lazadaOpenApi.timestamp();
 console.info(timestamp);
 ```
 Response Data
