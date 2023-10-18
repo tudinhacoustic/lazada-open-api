@@ -24,7 +24,7 @@ Installation is done using the
 [`npm install` command](https://docs.npmjs.com/getting-started/installing-npm-packages-locally):
 
 ```console
-$ npm install lazada-open-api
+$ npm install lazada-open-api-package
 ```
 [Back](#content)
 
@@ -44,7 +44,7 @@ $ npm install lazada-open-api
 
 ## Generate Signature using Url
 ```js
-const lazadaOpenApi = require('lazada-open-api')
+const lazadaOpenApi = require('lazada-open-api-package')
 
 // Example Url.
 // The package helps remove the "sign", and the "time" has been decoded.
@@ -65,7 +65,7 @@ Response Data
 [Back](#content)
 ## Generate Signature
 ```js
-const lazadaOpenApi = require('lazada-open-api')
+const lazadaOpenApi = require('lazada-open-api-package')
 
 // The package helps remove the "sign", and the "time" has been decoded.
 const params = {
@@ -90,7 +90,7 @@ Response Data
 
 ## Generate Timestamp
 ```js
-const lazadaOpenApi = require('lazada-open-api')
+const lazadaOpenApi = require('lazada-open-api-package')
 
 const timestamp = lazadaOpenApi.timestamp(params, path, appSecret);
 console.info(timestamp);
