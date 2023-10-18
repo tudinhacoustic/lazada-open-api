@@ -1,5 +1,5 @@
 {
-  "name": "lazada-open-api",
+  "name": "lazada-open-api-package",
   "version": "1.0.0",
   "description": "Generate \"signature\", \"signature by url\" and more for Lazada Open Platform.",
   "main": "index.js",
