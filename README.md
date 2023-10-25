@@ -102,8 +102,8 @@ Response Data
 ```
 [Back](#content)
 
-[npm-url]: https://npmjs.org/package/lazada-open-api
-[npm-version-image]: https://badgen.net/npm/v/lazada-open-api
+[npm-url]: https://npmjs.org/package/lazada-open-api-package
+[npm-version-image]: https://badgen.net/npm/v/lazada-open-api-package
 
 Follow me on: 
 [Linkedin](https://www.linkedin.com/in/tudinhacoustic) |
