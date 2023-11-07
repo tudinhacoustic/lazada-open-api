@@ -17,6 +17,8 @@
 4. [Generate Signature using Url](#generate-signature-using-url)
 5. [Generate Signature](#generate-signature)
 6. [Generate Timestamp](#generate-timestamp)
+7. [Generate Token using Auth Code](#generate-token-using-auth-code)
+8. [Generate Token using Refresh Token](#generate-token-using-refresh-token)
 
 ## Installation
 
@@ -33,6 +35,8 @@ $ npm install lazada-open-api-package
   * Generate Signature using Url
   * Generate Signature
   * Generate Timestamp
+  * Generate Token using Auth Code
+  * Generate Token using Refresh Token
 
 [Back](#content)
 
@@ -99,6 +103,74 @@ console.info(timestamp);
 Response Data
 ```console
 1697650466818
+```
+[Back](#content)
+
+## Generate Token using Auth Code
+```js
+const lazadaOpenApi = require('lazada-open-api-package');
+const appKey = 'your_app_key';
+const authCode = 'your_auth_code';
+const appSecret = 'your_app_secret';
+
+const accessToken = await lazadaOpenApi.authCodeToken(appKey, authCode, appSecret);
+console.info(accessToken);
+```
+Response Data
+```console
+{
+  access_token: '500003xxx',
+  country: 'vn',
+  refresh_token: '50001xxx',
+  country_user_info_list: [
+    {
+      country: 'vn',
+      user_id: '200xxx',
+      seller_id: '200xxx',
+      short_code: 'xxx'
+    }
+  ],
+  account_platform: 'seller_center',
+  refresh_expires_in: 2589988,
+  expires_in: 604800,
+  account: 'xxx',
+  code: '0',
+  request_id: 'xxx'
+}
+```
+[Back](#content)
+
+## Generate Token using Refresh Token
+```js
+const lazadaOpenApi = require('lazada-open-api-package');
+const appKey = 'your_app_key';
+const refreshToken = 'your_refresh_token';
+const appSecret = 'your_app_secret';
+
+const accessToken = await lazadaOpenApi.authCodeToken(appKey, refreshToken, appSecret);
+console.info(accessToken);
+```
+Response Data
+```console
+{
+  access_token: '500003xxx',
+  country: 'vn',
+  refresh_token: '50001xxx',
+  country_user_info_list: [
+    {
+      country: 'vn',
+      user_id: '200xxx',
+      seller_id: '200xxx',
+      short_code: 'xxx'
+    }
+  ],
+  account_platform: 'seller_center',
+  refresh_expires_in: 2589988,
+  expires_in: 604800,
+  account: 'xxx',
+  code: '0',
+  request_id: 'xxx'
+}
 ```
 [Back](#content)
 
